@@ -1,0 +1,32 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tools
+        run: sudo apt-get update && sudo apt-get install -y valgrind libcunit1-dev cppcheck
+
+      - name: Build
+        run: make
+
+      - name: Unit + functional tests (CUnit)
+        run: make test
+
+      - name: Memory check (Valgrind)
+        run: make valgrind
+
+      - name: Race check (Helgrind)
+        run: make helgrind
+
+      - name: Static analysis (cppcheck)
+        run: make cppcheck
+
+      - name: Code coverage (gcov)
+        run: make coverage
+
+      - name: Benchmark hash table vs linked list
+        run: make bench

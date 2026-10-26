@@ -1,0 +1,147 @@
+Running main() from ./googletest/src/gtest_main.cc
+[==========] Running 57 tests from 9 test suites.
+[----------] Global test environment set-up.
+[----------] 11 tests from ValidationTest
+[ RUN      ] ValidationTest.AcceptsValidUsername
+[       OK ] ValidationTest.AcceptsValidUsername (0 ms)
+[ RUN      ] ValidationTest.RejectsInvalidUsername
+[       OK ] ValidationTest.RejectsInvalidUsername (0 ms)
+[ RUN      ] ValidationTest.AcceptsValidFlightId
+[       OK ] ValidationTest.AcceptsValidFlightId (0 ms)
+[ RUN      ] ValidationTest.RejectsInvalidFlightId
+[       OK ] ValidationTest.RejectsInvalidFlightId (0 ms)
+[ RUN      ] ValidationTest.ValidatesFlightNames
+[       OK ] ValidationTest.ValidatesFlightNames (0 ms)
+[ RUN      ] ValidationTest.ValidatesAirports
+[       OK ] ValidationTest.ValidatesAirports (0 ms)
+[ RUN      ] ValidationTest.ValidatesPersonNames
+[       OK ] ValidationTest.ValidatesPersonNames (0 ms)
+[ RUN      ] ValidationTest.ValidatesAddresses
+[       OK ] ValidationTest.ValidatesAddresses (0 ms)
+[ RUN      ] ValidationTest.ValidatesIdentificationNumbers
+[       OK ] ValidationTest.ValidatesIdentificationNumbers (0 ms)
+[ RUN      ] ValidationTest.ValidatesPasswords
+[       OK ] ValidationTest.ValidatesPasswords (0 ms)
+[ RUN      ] ValidationTest.ValidatesChoices
+[       OK ] ValidationTest.ValidatesChoices (0 ms)
+[----------] 11 tests from ValidationTest (0 ms total)
+
+[----------] 3 tests from UtilityTest
+[ RUN      ] UtilityTest.CalculatesFareWithTax
+[       OK ] UtilityTest.CalculatesFareWithTax (0 ms)
+[ RUN      ] UtilityTest.RoundsMoneyToTwoDecimalPlaces
+[       OK ] UtilityTest.RoundsMoneyToTwoDecimalPlaces (0 ms)
+[ RUN      ] UtilityTest.ReturnsStatusMessage
+[       OK ] UtilityTest.ReturnsStatusMessage (0 ms)
+[----------] 3 tests from UtilityTest (0 ms total)
+
+[----------] 10 tests from DateTimeTest
+[ RUN      ] DateTimeTest.AcceptsValidDate
+[       OK ] DateTimeTest.AcceptsValidDate (0 ms)
+[ RUN      ] DateTimeTest.RejectsInvalidDate
+[       OK ] DateTimeTest.RejectsInvalidDate (0 ms)
+[ RUN      ] DateTimeTest.RejectsNullDate
+[       OK ] DateTimeTest.RejectsNullDate (0 ms)
+[ RUN      ] DateTimeTest.FormatsDateAndTime
+[       OK ] DateTimeTest.FormatsDateAndTime (0 ms)
+[ RUN      ] DateTimeTest.DetectsSameDay
+[       OK ] DateTimeTest.DetectsSameDay (0 ms)
+[ RUN      ] DateTimeTest.DetectsDifferentDays
+[       OK ] DateTimeTest.DetectsDifferentDays (0 ms)
+[ RUN      ] DateTimeTest.ParsesDateAndTime
+[       OK ] DateTimeTest.ParsesDateAndTime (0 ms)
+[ RUN      ] DateTimeTest.RejectsInvalidDateText
+[       OK ] DateTimeTest.RejectsInvalidDateText (0 ms)
+[ RUN      ] DateTimeTest.RejectsNullInput
+[       OK ] DateTimeTest.RejectsNullInput (0 ms)
+[ RUN      ] DateTimeTest.ConvertsDateToTimeAndBack
+[       OK ] DateTimeTest.ConvertsDateToTimeAndBack (0 ms)
+[----------] 10 tests from DateTimeTest (0 ms total)
+
+[----------] 5 tests from NameTest
+[ RUN      ] NameTest.ReturnsRoleNames
+[       OK ] NameTest.ReturnsRoleNames (0 ms)
+[ RUN      ] NameTest.ReturnsUnknownForInvalidRole
+[       OK ] NameTest.ReturnsUnknownForInvalidRole (0 ms)
+[ RUN      ] NameTest.ReturnsFlightStatusName
+[       OK ] NameTest.ReturnsFlightStatusName (0 ms)
+[ RUN      ] NameTest.ReturnsBookingStatusName
+[       OK ] NameTest.ReturnsBookingStatusName (0 ms)
+[ RUN      ] NameTest.ReturnsMessagesForStatuses
+[       OK ] NameTest.ReturnsMessagesForStatuses (0 ms)
+[----------] 5 tests from NameTest (0 ms total)
+
+[----------] 3 tests from PasswordHashTest
+[ RUN      ] PasswordHashTest.ProducesSameHashForSameInputs
+[       OK ] PasswordHashTest.ProducesSameHashForSameInputs (0 ms)
+[ RUN      ] PasswordHashTest.ChangesHashWhenPasswordChanges
+[       OK ] PasswordHashTest.ChangesHashWhenPasswordChanges (0 ms)
+[ RUN      ] PasswordHashTest.ChangesHashWhenUsernameChanges
+[       OK ] PasswordHashTest.ChangesHashWhenUsernameChanges (0 ms)
+[----------] 3 tests from PasswordHashTest (0 ms total)
+
+[----------] 4 tests from InputTest
+[ RUN      ] InputTest.InputLineRejectsNullBuffer
+[       OK ] InputTest.InputLineRejectsNullBuffer (0 ms)
+[ RUN      ] InputTest.InputLineRejectsSmallBuffer
+[       OK ] InputTest.InputLineRejectsSmallBuffer (0 ms)
+[ RUN      ] InputTest.InputIntRejectsNullOutput
+[       OK ] InputTest.InputIntRejectsNullOutput (0 ms)
+[ RUN      ] InputTest.InputDoubleRejectsNullOutput
+[       OK ] InputTest.InputDoubleRejectsNullOutput (0 ms)
+[----------] 4 tests from InputTest (0 ms total)
+
+[----------] 11 tests from HashTableTest
+[ RUN      ] HashTableTest.RejectsZeroBuckets
+[       OK ] HashTableTest.RejectsZeroBuckets (0 ms)
+[ RUN      ] HashTableTest.CreatesAndDestroysTable
+[       OK ] HashTableTest.CreatesAndDestroysTable (0 ms)
+[ RUN      ] HashTableTest.RejectsNullTableKeyAndValue
+[       OK ] HashTableTest.RejectsNullTableKeyAndValue (0 ms)
+[ RUN      ] HashTableTest.RejectsInvalidKeys
+[       OK ] HashTableTest.RejectsInvalidKeys (0 ms)
+[ RUN      ] HashTableTest.InsertsAndRetrievesValue
+[       OK ] HashTableTest.InsertsAndRetrievesValue (0 ms)
+[ RUN      ] HashTableTest.RejectsDuplicateKey
+[       OK ] HashTableTest.RejectsDuplicateKey (0 ms)
+[ RUN      ] HashTableTest.ReturnsNullForMissingKey
+[       OK ] HashTableTest.ReturnsNullForMissingKey (0 ms)
+[ RUN      ] HashTableTest.RemovesExistingKey
+[       OK ] HashTableTest.RemovesExistingKey (0 ms)
+[ RUN      ] HashTableTest.ReportsMissingKeyDuringRemoval
+[       OK ] HashTableTest.ReportsMissingKeyDuringRemoval (0 ms)
+[ RUN      ] HashTableTest.RemovesOneKeyWithoutRemovingAnother
+[       OK ] HashTableTest.RemovesOneKeyWithoutRemovingAnother (0 ms)
+[ RUN      ] HashTableTest.SafelyDestroysNullTable
+[       OK ] HashTableTest.SafelyDestroysNullTable (0 ms)
+[----------] 11 tests from HashTableTest (0 ms total)
+
+[----------] 5 tests from LoggerTest
+[ RUN      ] LoggerTest.InitializesAndWritesMessage
+[       OK ] LoggerTest.InitializesAndWritesMessage (0 ms)
+[ RUN      ] LoggerTest.DoesNotCrashWhenWritingBeforeInitialization
+[       OK ] LoggerTest.DoesNotCrashWhenWritingBeforeInitialization (0 ms)
+[ RUN      ] LoggerTest.HandlesNullPath
+[       OK ] LoggerTest.HandlesNullPath (0 ms)
+[ RUN      ] LoggerTest.CanInitializeAgainAfterClosing
+[       OK ] LoggerTest.CanInitializeAgainAfterClosing (0 ms)
+[ RUN      ] LoggerTest.HandlesInvalidFilePath
+[       OK ] LoggerTest.HandlesInvalidFilePath (0 ms)
+[----------] 5 tests from LoggerTest (0 ms total)
+
+[----------] 5 tests from SystemTest
+[ RUN      ] SystemTest.InitializesSystemSuccessfully
+[       OK ] SystemTest.InitializesSystemSuccessfully (0 ms)
+[ RUN      ] SystemTest.RejectsNullSystemDuringInitialization
+[       OK ] SystemTest.RejectsNullSystemDuringInitialization (0 ms)
+[ RUN      ] SystemTest.ShutsDownInitializedSystem
+[       OK ] SystemTest.ShutsDownInitializedSystem (0 ms)
+[ RUN      ] SystemTest.SafelyHandlesNullShutdown
+[       OK ] SystemTest.SafelyHandlesNullShutdown (0 ms)
+[ RUN      ] SystemTest.CanInitializeAgainAfterShutdown
+[       OK ] SystemTest.CanInitializeAgainAfterShutdown (0 ms)
+[----------] 5 tests from SystemTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 57 tests from 9 test suites ran. (0 ms total)
+[  PASSED  ] 57 tests.

@@ -1,0 +1,7 @@
+build/
+*.o
+*.gcda
+*.gcno
+*.gcov
+fms.log
+*.log
